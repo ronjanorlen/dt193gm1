@@ -1,0 +1,17 @@
+{
+  "name": "dt193gm1",
+  "version": "1.0.0",
+  "description": "",
+  "source": "src/index.html",
+  "browserslist": "> 0.5%, last 2 versions, not dead",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "keywords": [],
+  "author": "Ronja Norlén",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.13.0"
+  }
+}

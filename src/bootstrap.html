@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="sv">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body class="bg-secondary-subtle">
+    
+    <!-- Huvudmeny -->
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Moment 1</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown"
+                aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Hem</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="bootstrap.html">Bootstrap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="milligram.html">Milligram</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="publicering.html">Publicering</a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- Container -->
+    <div class="container shadow p-3 mb-5 bg-light-subtle border border-dark-subtle rounded-3">
+        <h1 class="m-5">Bootstrap</h1>
+        <!-- Accordion -->
+        <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button bg-success text-white border border-dark-subtle" type="button"
+                        data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                        aria-controls="collapseOne">
+                        <strong>Vad är Bootstrap?</strong>
+                    </button>
+                </h2>
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the first item's accordion body.</strong> It is shown by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h2 class="accordion-header">
+                    <button class="accordion-button collapsed bg-success text-white border border-dark-subtle"
+                        type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                        aria-controls="collapseTwo">
+                        <strong>Vad är bra med Bootstrap?</strong>
+                    </button>
+                </h2>
+                <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                    <div class="accordion-body">
+                        <strong>This is the second item's accordion body.</strong> It is hidden by default, until the
+                        collapse plugin adds the appropriate classes that we use to style each element. These classes
+                        control the overall appearance, as well as the showing and hiding via CSS transitions. You can
+                        modify any of this with custom CSS or overriding our default variables. It's also worth noting
+                        that just about any HTML can go within the <code>.accordion-body</code>, though the transition
+                        does limit overflow.
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- Tabell -->
+
+        <h2 class="m-5">Tabell</h2>
+        <div class="table table-responsive">
+            <table class="table table-bordered table-striped">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Namn</th>
+                        <th scope="col">Använt Bootstrap förut?</th>
+                        <th scope="col">Meddelande</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Ronja</td>
+                        <td>Nej</td>
+                        <td>Detta är första gången jag använder Bootstrap!</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>André</td>
+                        <td>Nej</td>
+                        <td>Vad är Bootstrap?</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Elin</td>
+                        <td>Nej</td>
+                        <td>Jag tycker om kaffe</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">4</th>
+                        <td>Per</td>
+                        <td>Ja</td>
+                        <td>Mitt jobb använder Bootstrap till deras webbplats</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Formulär -->
+        <div class="container bg-primary-subtle shadow p-3 mb-5 border border-dark-subtle">
+            <h2 class="m-5">Formulär</h2>
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="inputName" class="form-label">Namn</label>
+                    <input type="email" class="form-control" id="inputName">
+                </div>
+
+                <div class="col-12">
+                    <label for="inputMessage" class="form-label">Meddelande</label>
+                    <textarea id="inputMessage" rows="8" cols="15" class="form-control"
+                        placeholder="Skriv något kul"></textarea>
+                </div>
+
+
+                <div class="col-md-4">
+                    <label for="inputYesNo" class="form-label">Jag har använt Bootstrap</label>
+                    <select id="inputYesNo" class="form-select">
+                        <option selected>Välj</option>
+                        <option>Ja</option>
+                        <option>Nej</option>
+                        <option>Vet ej..</option>
+                    </select>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Jag är inte en katt
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-success">Lägg till uppgifter</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
