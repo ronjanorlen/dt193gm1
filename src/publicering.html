@@ -3,9 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milligram</title>
+    <title>Publicering</title>
+
+    <!-- Länkar in milligram -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- Länkar in egen css -->
+    <link rel="stylesheet" href="milligramstyle.css">
 </head>
+
 <body>
+
+     <!-- Huvudmeny -->
+     <div class="navigation-container">
+
+      <!-- Knapp för att öppna/stänga meny på små skärmar -->
+      <input type="checkbox" id="menu-toggle">
+  
+       <!-- Hamburgerikon för menyn på små skärmar -->
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+      <nav>
+      <div class="row">
+        <div class="column"></div>
+        <div class="column"><li><a href="index.html">Hem</a></li></div>
+        <div class="column"><li><a href="bootstrap.html">Bootstrap</a></li></div>
+        <div class="column"><li><a href="milligram.html">Milligram</a></li></div>
+        <div class="column"><li><a href="publicering.html" class="active">Publicering</a></li></div>
+        <div class="column"></div>
+      </div>
+    </nav>
+  </div>
     
+
+    <div class="container">
+        <h1>Publicering</h1>
+
+        <div class="row">
+          <div class="column">
+            <h2>Publicering</h2>
+        <p>
+          Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
+          Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), 
+          kostnad, för- och nackdelar och andra saker du tycker är utmärkande.
+        </p>
+          </div>
+          <div class="column"><h2>Arbetssätt för publicerings-plattform</h2>
+            <p>Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</p>
+          </div>
+          
+        </div>
+
+    </div>
+    <footer>
+      <p>Av: Ronja Norlén</p>
+   </footer> 
 </body>
+
 </html>

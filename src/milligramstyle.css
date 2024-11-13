@@ -1,0 +1,115 @@
+body {
+    background-color: #FFFFFF;
+    overflow-x: hidden;
+  }
+  
+  /* Dölj knapp */
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Huvudmeny */
+  .navigation-container .row {
+    justify-content: center;
+    background-color: #9B4DCA;
+  }
+  
+  .navigation-container .column {
+    text-align: center;
+    list-style-type: none;
+    height: 80px;
+    line-height: 60px;
+  }
+  
+  .navigation-container .column a {
+    text-decoration: none;
+    color: #f0f0f0;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .navigation-container .column a:hover {
+    color: #542770;
+  }
+  .navigation-container .column a.active {
+    color: #542770;
+  }
+  
+  /* Hamburgerikon */
+  .menu-icon {
+    display: none;
+    font-size: 30px;
+    text-align: right;
+    cursor: pointer;
+    color: #f0f0f0;
+    padding: 20px;
+  }
+  
+  /* Container */
+  .container {
+    background-color: #ffffff;
+    
+  }
+  
+  .row {
+    background-color: #b59cc4;
+    border: 2px solid;
+  }
+  
+  .column {
+    text-align: center;
+    margin: 2rem auto;
+    color:#fff;
+  }
+  
+  /* rubriker */
+  h1,
+  h2 {
+    margin-top: 2rem;
+  }
+  
+  /* tabell och formulär */
+  table,
+  form {
+    background-color: #fffffe;
+    padding: 1rem;
+    border: 1px solid;
+  }
+  
+  /* footer */
+  footer {
+    text-align: center;
+    color: #fff;
+    background-color: #9B4DCA;
+    width: 100%;
+    height: 100px;
+    line-height: 100px;
+  }
+  
+  
+  /* Media query för mindre skärmar */
+  @media (max-width: 768px) {
+    .menu-icon {
+      display: block; /* Visa hamburgerikon */
+      background-color: #9B4DCA;
+    }
+  
+    /* Dölj vanliga menyn */
+    .navigation-container .row {
+      display: none;
+      flex-direction: column;
+    }
+  
+    /* Visa meny i liten skärm */
+    #menu-toggle:checked+.menu-icon+.navigation .row {
+      display: flex;
+    }
+  
+    /* Gör meny till dropdown */
+    .navigation-container .column {
+      text-align: center;
+      padding: 10px 20px;
+      height: 50px;
+      line-height: 10px;
+    }
+  }

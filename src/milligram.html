@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Milligram</title>
+
+    <!-- Länkar in milligram -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/milligram/1.4.1/milligram.css">
+
+    <!-- Länkar in egen css -->
+    <link rel="stylesheet" href="milligramstyle.css">
 </head>
+
 <body>
-    
+
+     <!-- Huvudmeny -->
+<div class="navigation-container">
+    <!-- Knapp för att öppna/stänga meny på små skärmar -->
+    <input type="checkbox" id="menu-toggle">
+
+     <!-- Hamburgerikon för menyn på små skärmar -->
+  <label for="menu-toggle" class="menu-icon">&#9776;</label>
+    <nav class="navigation">
+    <div class="row">
+      <div class="column"></div>
+      <div class="column"><li><a href="index.html">Hem</a></li></div>
+      <div class="column"><li><a href="bootstrap.html">Bootstrap</a></li></div>
+      <div class="column"><li><a href="milligram.html" class="active">Milligram</a></li></div>
+      <div class="column"><li><a href="publicering.html">Publicering</a></li></div>
+      <div class="column"></div>
+    </div>
+  </nav>
+</div>
+
+ 
+   
+    <div class="container">
+        <h1>Milligram</h1>
+
+        <!-- Om Milligram -->
+        <div class="row">
+          <div class="column">
+            <h2>Vad är Milligram?</h2>
+        <p>Milligram är ett simpelt ramverk blablabla-..</p>
+          </div>
+          <div class="column"><h2>Vad är bra med Milligram?</h2>
+            <p>Det som är bra med Milligram är...</p>
+          </div>
+          
+        </div>
+      
+           <!-- Tabell -->
+            <h2>Tabell</h2>
+           <table>
+            <thead>
+              <tr>
+                <th>Namn</th>
+                <th>Ålder</th>
+                <th>Längd</th>
+                <th>Kommentar</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Anna</td>
+                <td>35</td>
+                <td>Ganska kort</td>
+                <td>Jag gillar hästar</td>
+              </tr>
+              <tr>
+                <td>Clara</td>
+                <td>30</td>
+                <td>Lång</td>
+                <td>Det heter ostBÅGAR!</td>
+              </tr>
+              <tr>
+                <td>Elin</td>
+                <td>31</td>
+                <td>Kort</td>
+                <td>Nu kan det få börja snöa lite..</td>
+              </tr>
+              <tr>
+                <td>Jennifer</td>
+                <td>29</td>
+                <td>Jättelång</td>
+                <td>Jag har jättemycket kläder</td>
+              </tr>
+            </tbody>
+          </table>
+
+         <!-- Formulär -->
+         <h2>Formulär</h2>
+        <form>
+            <fieldset>
+                <label for="nameField">Namn</label>
+                <input type="text" placeholder="Ange namn" id="nameField">
+                <label for="ageRangeField">Min ålder</label>
+                <select id="ageRangeField">
+                    <option selected>Välj</option>
+                    <option value="18">18</option>
+                    <option value="19">19</option>
+                    <option value="20">20</option>
+                    <option value="21">21</option>
+                    <option value="22">22</option>
+                    <option value="23">23</option>
+                    <option value="24">24</option>
+                    <option value="25">25</option>
+                    <option value="26">26</option>
+                    <option value="27">27</option>
+                    <option value="28">28</option>
+                    <option value="29">29</option>
+                    <option value="30">30</option>
+                    <option value="31">31</option>
+                    <option value="32">32</option>
+                    <option value="33">33</option>
+                    <option value="34">34</option>
+                    <option value="35">35</option>
+                    <option value="36">36</option>
+                    <option value="37">37</option>
+                    <option value="38">39</option>
+                    <option value="40">40</option>
+                    <option value="40+">40+</option>
+                </select>
+                <label for="heightRangeField">Min längd</label>
+                <select id="heightRangeField">
+                    <option selected>Välj</option>
+                    <option value="xs">Kort</option>
+                    <option value="s">Ganska kort</option>
+                    <option value="xxs">Jättekort</option>
+                    <option value="m">Lång</option>
+                    <option value="l">Ganska lång</option>
+                    <option value="xl">Jättelång</option>
+                </select>
+                <label for="commentField">Kommentar</label>
+                <textarea placeholder="Lämna en kommentar" id="commentField"></textarea>
+                <div class="float-right">
+                    <input type="checkbox" id="confirmField">
+                    <label class="label-inline" for="confirmField">Jag gillar ostkrokar</label>
+                </div>
+                <input class="button-primary" type="submit" value="Lägg till">
+            </fieldset>
+        </form>
+
+    </div>
+     <footer>
+     <p>Av: Ronja Norlén</p>
+  </footer> 
+  
 </body>
+
 </html>
