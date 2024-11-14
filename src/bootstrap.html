@@ -120,6 +120,7 @@
                     <tr>
                         <th scope="col">#</th>
                         <th scope="col">Namn</th>
+                        <th scope="col">Ålder</th>
                         <th scope="col">Använt Bootstrap förut?</th>
                         <th scope="col">Meddelande</th>
                     </tr>
@@ -128,30 +129,35 @@
                     <tr>
                         <th scope="row">1</th>
                         <td>Ronja</td>
+                        <td>31</td>
                         <td>Nej</td>
                         <td>Detta är första gången jag använder Bootstrap!</td>
                     </tr>
                     <tr>
                         <th scope="row">2</th>
                         <td>André</td>
+                        <td>30</td>
                         <td>Nej</td>
                         <td>Vad är Bootstrap?</td>
                     </tr>
                     <tr>
                         <th scope="row">3</th>
                         <td>Elin</td>
+                        <td>31</td>
                         <td>Nej</td>
                         <td>Jag tycker om kaffe</td>
                     </tr>
                     <tr>
                         <th scope="row">4</th>
                         <td>Per</td>
+                        <td>33</td>
                         <td>Ja</td>
                         <td>Mitt jobb använder Bootstrap till deras webbplats</td>
                     </tr>
                     <tr>
                         <th scope="row">5</th>
                         <td>Andreas</td>
+                        <td>25</td>
                         <td>Nej</td>
                         <td>Jag har aldrig hört talas om Bootstrap, jag är snickare..</td>
                     </tr>
@@ -165,7 +171,7 @@
             <form class="row g-3">
                 <div class="col-md-6">
                     <label for="inputName" class="form-label">Namn</label>
-                    <input type="email" class="form-control" id="inputName">
+                    <input type="text" class="form-control" id="inputName">
                 </div>
 
                 <div class="col-12">
@@ -182,6 +188,35 @@
                         <option>Ja</option>
                         <option>Nej</option>
                         <option>Vet ej..</option>
+                    </select>
+                </div>
+                <div class="col-md-4">
+                    <label for="age" class="form-label">Ålder</label>
+                    <select id="age" class="form-select">
+                        <option selected>Välj</option>
+                        <option value="18">18</option>
+                        <option value="19">19</option>
+                        <option value="20">20</option>
+                        <option value="21">21</option>
+                        <option value="22">22</option>
+                        <option value="23">23</option>
+                        <option value="24">24</option>
+                        <option value="25">25</option>
+                        <option value="26">26</option>
+                        <option value="27">27</option>
+                        <option value="28">28</option>
+                        <option value="29">29</option>
+                        <option value="30">30</option>
+                        <option value="31">31</option>
+                        <option value="32">32</option>
+                        <option value="33">33</option>
+                        <option value="34">34</option>
+                        <option value="35">35</option>
+                        <option value="36">36</option>
+                        <option value="37">37</option>
+                        <option value="38">39</option>
+                        <option value="40">40</option>
+                        <option value="40+">40+</option>
                     </select>
                 </div>
 
