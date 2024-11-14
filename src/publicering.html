@@ -41,20 +41,69 @@
 
         <div class="row">
           <div class="column">
-            <h2>Publicering</h2>
+            <h2>Netlify</h2>
         <p>
-          Beskriv den publicerings-plattform du valt för att publicera dina webbplats.
-          Ta med saker som kod-stöd (vilka programmerings-språk som går att använda), 
-          kostnad, för- och nackdelar och andra saker du tycker är utmärkande.
-        </p>
+          För att publicera denna webbplats har jag använt mig av Netlify. 
+          Netlify är en enkel och smidig plattform för att publicera och hantera statiska webbplatser. 
+          Då jag har använt mig av npm-paketet Parcel i denna laboration är det enkelt att lägga in 
+          bygg-kommando som Netlify använder för att bygga webbplatsen samt att parcel underlättar 
+          utveckling då det erbjuder live server med kommando npm run start. </p>
+
+          <h3>Programmeringsspråk</h3>
+          <p>Netlify stöder programmeringsspråk som HTML, CSS, JavaScript, Python och PHP. </p>
+
+          <h3>Kostnad</h3>
+          <p>Netlify erbjuder olika prisplaner beroende på vad behovet är och i dagsläget finns det tre olika varianter:<br>
+            <br>
+            <strong>Free & Starter:</strong><br>
+            En gratisvariant som passar bra för personliga projekt, prototyper eller bara för att komma igång.<br>
+            <br>
+            <strong>Pro:</strong><br>
+            Passar bra för team som arbetar med professionella projekt, kostar 19$ per medlem och månad.<br>
+            <br>
+            <strong>Enterprise:</strong><br>
+            Anpassad för stora organisationer som behöver mer kontroll, efterlevnad och support.
+            Denna prisplan har en anpassad prissättning och är man intresserad kan man kontakta Netlify för att få en offert.
+          </p>
+
+          <h3>För- och nackdelar</h3>
+
+          <p><strong>Fördelar:</strong>
+            <ul>
+              <li>Smidigt att koppla till sitt GitHub-repo.</li>
+              <li>Automatisk uppdatering efter publicering när ny push görs.</li>
+              <li>Lätt att komma igång med.</li>
+              <li>Möjlighet att använda gratisvariant.</li>
+              <li>Bra för statiska webbplatser.</li>
+            </ul>
+            <strong>Nackdelar:</strong>
+            <ul>
+              <li>Inget stöd för backend.</li>
+            </ul>
+
+          </p> 
+
+       
           </div>
-          <div class="column"><h2>Arbetssätt för publicerings-plattform</h2>
-            <p>Beskriv även hur arbetssättet är för att publicera arbetsfiler till denna webbhost.</p>
+          <div class="column"><h2>Arbetssätt</h2>
+            <p>Att publicera på Netlify tycker jag är väldigt smidigt.
+              För att publicera har jag först och främst loggat in med mitt GitHub-konto, 
+              därefter är det bara att klicka på "Add new site", fylla i site name och bygg-kommando,
+              sedan klicka på deploy. Under tiden webbplatsen deployas visas en log som talar om eventuella fel 
+              och när allting är klart skapas en länk till den färdiga sidan. <br>
+              <br>
+              Om jag vill göra en ändring på webbplatsen efter den är publicerad är det bara att 
+              pusha upp ändringen till GitHub-repot och så uppdateras den publika webbplatsen per automatik.
+              Jag behöver alltså inte publicera webbplatsen på nytt, utan Netlify sköter detta åt mig.
+            </p>
           </div>
           
         </div>
 
     </div>
+    <footer>
+      <p>Av: Ronja Norlén</p>
+   </footer>
 </body>
 
 </html>
