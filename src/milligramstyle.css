@@ -54,6 +54,7 @@ body {
   .row {
     background-color: #b59cc4;
     border: 2px solid;
+    padding: 2rem;
   }
   
   .column {

@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hem</title>
+    <!-- Länkar in Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </head>
 <body>
+    <!-- Huvudmeny -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
             <a class="navbar-brand" href="index.html">Moment 1</a>
@@ -35,11 +37,10 @@
         </div>
     </nav>
 
+    <!-- Container med huvudinnehåll -->
     <div class="container">
-    
-
-   
-        <h2 class="m-5">Uppgiftsbeskrivning</h2>
+        <h2 class="m-5">DT193G Moment 1 - CSS-ramverk</h2>
+        <h3 class="m-3">Uppgiftsbeskrivning</h3>
         <div class="accordion" id="accordionExample">
             <div class="accordion-item">
                 <h2 class="accordion-header">
@@ -50,11 +51,15 @@
                 </h2>
                 <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>Denna uppgift innefattar att skapa en sammanhängande webbplats med två olika CSS-ramverk. <br>
-                        Webbplatsen ska innehålla en startsida, separata undersidor för varje ramverk samt en sida om vilken 
-                        publiceringsplattform som har använts. <br> 
-                        Huvudsyftet med denna uppgift är att få en överblick vilka CSS-ramverk som finns och testa på att använda dessa samt
-                        utvärdera och använda publicerings-metoder som inte är FTP-baserade. </p>
+                        <p>Denna uppgift går ut på att skapa en sammanhängande webbplats som är skapad med
+                           minst två olika ramverk. Syftet är att utvärdera och använda olika CSS-ramverk för 
+                           webbutveckling samt utvärdera och använda publicerings-metoder som inte är FTP-baserade.
+                           Webbplatsen ska innehålla en startsida, en undersida för respektive ramverk samt en sida om publicerings-metod. 
+                           <br>
+                           <br>
+                           Laborationen ger möjlighet för oss som studenter att testa olika CSS-ramverk och använda oss av den funktionalitet 
+                           som dessa erbjuder.      
+                        </p>
                     </div>
                 </div>
             </div>
@@ -68,10 +73,11 @@
                 <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
                         <p>
-                            För att lösa denna uppgift har jag använt Bootstrap och Milligram. <br>
-                            Jag valde dessa två för att jag ville testa ett lite större ramverk och ett lite mindre. <br>
+                            För denna uppgift ville jag testa ett lite större och ett lite mindre ramverk för att kunna jämföra 
+                            dessa och se vad skillnaderna är, därför har jag valt att använda mig av Bootstrap och Milligram. <br>
                             <br>
-                            Startsidan är byggd med Bootstrap och publicerings-sidan är byggd med Milligram.
+                            Bootstrap används på startsidan och undersidan "Bootstrap", och Milligram har jag applicerat på publicerings-sidan 
+                            och undersidan "Milligram". 
                         </p>
                     </div>
                 </div>
@@ -80,22 +86,25 @@
                 <h2 class="accordion-header">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                        <strong>Innehåll på undersidor</strong>
+                        <strong>Krav för undersidor</strong>
                     </button>
                 </h2>
                 <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                     <div class="accordion-body">
-                        <p>På undersidorna för ramverken ska det, utöver information om ramverket, finnas en tabell 
-                            som innehåller minst fyra fält med data samt ett formulär som är konstruerat på ett 
-                            sådant sätt att det skulle kunna användas för att lagra data i den tillhörande tabellen. 
-                            Formuläret ska som minimun innehålle ett input-fält, textarea, checkbox och select-lista 
-                            samt en submit-knapp.
+                        <p>Undersidorna om ramverken ska innehålla information om ramverket, en tabell med minst fyra fält och fem rader data 
+                            samt ett formulär som ska vara konstruerat så att det skulle kunna användas för att lagra data 
+                            i den tillhörande tabellen. Formuläret ska som minimun innehålla ett input-fält, textarea, checkbox 
+                            och select-lista samt en submit-knapp.<br>
+                            <br>
+                            Publicerings-sidan ska innehålla information om den publiceringsplattform som använts för att publicera 
+                            denna webbplats. Beskrivningen om plattformen kan vara saker som vilka programmeringsspråk som går att använda, 
+                            kostnad, för- och nackdelar samt andra saker som kan vara utmärkande. Det ska även finnas en beskrivning om hur 
+                            arbetssättet är för att publicera arbetsfiler till vald webbhost.
                         </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-</body>
 </body>
 </html>
